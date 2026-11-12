@@ -1,0 +1,41 @@
+/* ---------- topo ---------- */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--verde2);z-index:70}
+#prog::after{content:"";position:absolute;right:0;top:0;width:10px;height:3px;background:var(--verm)}
+#topo{position:sticky;top:0;z-index:60;background:var(--bg);border-bottom:1px solid var(--linha)}
+.topo-in{max-width:var(--largura-pagina);margin:0 auto;display:flex;align-items:center;gap:1.4rem;padding:.6rem 1.1rem;position:relative}
+nav.menu{display:flex;gap:1.6rem;margin-left:auto}
+nav.menu a{font-family:var(--kufi);font-weight:500;text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem 0;border-bottom:2px solid transparent;position:relative}
+nav.menu a:hover,nav.menu a.on{border-bottom-color:var(--verde2)}
+nav.menu a.on::after{content:"";position:absolute;left:50%;bottom:-6px;width:6px;height:6px;background:var(--verm);transform:translateX(-50%) rotate(45deg)}
+
+/* logo */
+.logo{--c:var(--fg);display:inline-flex;align-items:center;font-family:var(--kufi);font-weight:700;font-size:2.3rem;line-height:1;text-decoration:none;position:relative;padding-bottom:.45rem;color:var(--c);letter-spacing:.01em}
+.logo .lr{display:inline-block;position:relative;margin-right:.14em}
+.logo .lb{position:relative;display:inline-block;padding:.08em .22em .1em .2em;margin-left:.02em}
+.logo .lb::before{content:"";position:absolute;inset:0;border:.075em solid var(--verde2);box-shadow:inset 0 0 0 0 transparent}
+.logo .lb::after{content:"";position:absolute;left:-.075em;top:-.075em;width:.34em;height:.34em;border-top:.075em solid var(--verm);border-left:.075em solid var(--verm)}
+.logo .li{display:inline-flex;position:relative;z-index:1}
+.logo .li i{font-style:normal;display:inline-block;position:relative}
+.logo .li i::before,.logo .li i::after{content:attr(data-c);position:absolute;left:0;top:0;opacity:0}
+.logo .li i::before{color:var(--verm2);clip-path:inset(0 0 55% 0)}
+.logo .li i::after{color:var(--verde2);clip-path:inset(55% 0 0 0)}
+.logo .ls{position:absolute;left:0;bottom:0;width:100%;height:.34em;overflow:visible}
+.logo .ls path{fill:none;stroke:var(--verde2);stroke-width:2;stroke-linejoin:miter}
+.logo .est{position:absolute;right:-.5em;top:-.05em;width:.42em;height:.42em;color:var(--verm)}
+.logo.go .lr{animation:lr .55s cubic-bezier(.2,.9,.3,1) both}
+.logo.go .lb::before{animation:caixa 1s .25s steps(14) both}
+.logo.go .lb::after{animation:fadein .3s 1.05s both}
+.logo.go .li i{animation:ponto .5s steps(5) both}
+.logo.go .li i:nth-child(1){animation-delay:.65s}.logo.go .li i:nth-child(2){animation-delay:.8s}.logo.go .li i:nth-child(3){animation-delay:.95s}
+.logo.go .ls path{stroke-dasharray:1;stroke-dashoffset:1;animation:traco 1.1s 1.1s ease-out forwards}
+.logo.go .est{animation:est 1s 1.5s both}
+.logo.go .li i:nth-child(1)::before,.logo.go .li i:nth-child(1)::after{animation:glitch 7s 3s infinite}
+@keyframes lr{from{transform:translateY(-40%);opacity:0}to{transform:none;opacity:1}}
+@keyframes caixa{from{clip-path:inset(0 100% 0 0);border-color:var(--verm2)}60%{border-color:var(--verm2)}to{clip-path:inset(0)}}
+@keyframes ponto{0%{clip-path:inset(100% 0 0 0);color:var(--verde2)}60%{color:var(--verm2)}100%{clip-path:inset(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes traco{to{stroke-dashoffset:0}}
+@keyframes est{0%{transform:scale(0) rotate(-90deg);opacity:0}60%{transform:scale(1.4) rotate(20deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+@keyframes glitch{0%,93%,100%{opacity:0;transform:none}94%{opacity:.9;transform:translate(-.06em,.02em)}96%{opacity:.9;transform:translate(.06em,-.02em)}98%{opacity:.9;transform:translate(.03em,0)}}
+
+

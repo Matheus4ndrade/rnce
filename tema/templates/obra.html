@@ -1,0 +1,32 @@
+    <article>
+      <section class="cabeca">
+        <div class="poster">
+          <span class="pl">$secao · $capitulos_rotulo</span>
+          <h1 aria-label="$titulo">$titulo_em_linhas</h1>
+        </div>
+        <div class="info">
+          <div class="meta">
+            <div><span class="rot">gênero</span><b>$genero</b></div>
+            <div><span class="rot">ano</span><b>$ano</b></div>
+          </div>
+          <div class="sinopse">
+$sinopse
+          </div>
+$avisos
+        </div>
+      </section>
+
+      <section class="sumario" aria-label="Capítulos">
+        <div class="sumario-topo">
+          <p class="rot">capítulos</p>
+          <div class="sumario-acoes">
+            <a class="botao sec" id="continuar" href="$primeiro" data-obra="$slug" hidden>continuar de onde parei</a>
+            <a class="botao" href="$primeiro">começar a ler <span>→</span></a>
+          </div>
+        </div>
+        <ol>
+$capitulos
+        </ol>
+      </section>
+$outras
+    </article>

@@ -1,0 +1,32 @@
+    <article data-obra="$slug" data-capitulo="$numero">
+      <nav class="migalha" aria-label="Onde você está">
+        <a href="$link_secao">$secao</a><span aria-hidden="true">/</span><a href="$link_obra">$obra</a><span aria-hidden="true">/</span><span>$posicao</span>
+      </nav>
+
+      <div class="leitura">
+        <aside class="rail-e">
+          <div class="rail-b">
+            <button class="circ" id="baj" aria-label="Ajustes de leitura" aria-expanded="false" aria-controls="ajustes">Aa</button>
+$ajustes
+          </div>
+        </aside>
+
+        <div class="texto" id="texto">
+          <section class="cap">
+$titulo
+$texto
+$rodape
+          </section>
+        </div>
+
+        <aside class="rail" id="rail">
+          <nav class="capmenu" id="capmenu" aria-label="Capítulos">
+            <p class="rot">capítulos</p>
+            <ol>
+$menu
+            </ol>
+          </nav>
+          <button class="circ so-mob" id="bcap" aria-label="Capítulos" aria-expanded="false" aria-controls="capmenu">≡</button>
+        </aside>
+      </div>
+    </article>

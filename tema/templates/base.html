@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>$titulo</title>
+  <meta name="description" content="$descricao">
+  <meta property="og:title" content="$titulo">
+  <meta property="og:description" content="$descricao">
+  <meta property="og:type" content="$tipo_og">
+  <link rel="icon" href="${raiz}tema/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="${raiz}tema/css/00-fontes.css">
+  <link rel="stylesheet" href="${raiz}tema/css/01-base.css">
+  <link rel="stylesheet" href="${raiz}tema/css/02-topo.css">
+  <link rel="stylesheet" href="${raiz}tema/css/03-paginas.css">
+  <link rel="stylesheet" href="${raiz}tema/css/04-obra-e-leitura.css">
+  <link rel="stylesheet" href="${raiz}tema/css/05-responsivo.css">
+  <link rel="stylesheet" href="${raiz}tema/css/06-desenho-a-mao.css">
+  <link rel="stylesheet" href="${raiz}tema/css/tatreez.css">
+  <script src="${raiz}tema/js/preferencias.js"></script>
+</head>
+<body>
+  <svg class="filtros" width="0" height="0" aria-hidden="true">
+    <filter id="rough" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5"/>
+    </filter>
+  </svg>
+  <div id="prog"></div>
+
+  <header id="topo">
+    <div class="topo-in">
+      <a class="logo go" href="$inicio" aria-label="$nome_do_site, página inicial" id="logo">
+        <span class="lr">R</span><span class="lb"><span class="li"><i data-c="n">n</i><i data-c="c">c</i><i data-c="e">e</i></span></span>
+        <svg class="est" viewBox="-10 -10 20 20" aria-hidden="true"><path fill="currentColor" d="M0-9 2.4-3.6 8-6.4 5.4-1.2 9 0 5.4 1.2 8 6.4 2.4 3.6 0 9-2.4 3.6-8 6.4-5.4 1.2-9 0-5.4-1.2-8-6.4-2.4-3.6z"/></svg>
+        <svg class="ls" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" vector-effect="non-scaling-stroke" d="$traco_do_logo"/></svg>
+      </a>
+      <nav class="menu" aria-label="Seções">
+$menu
+      </nav>
+    </div>
+  </header>
+
+  <main>
+$corpo
+  </main>
+
+  <footer>
+    <div class="rod">
+      <span>rnce © $ano</span>
+      <span>Por <a href="$instagram" target="_blank" rel="noopener noreferrer">$autor</a></span>
+    </div>
+  </footer>
+  <div id="aviso" role="status" hidden></div>
+
+  <script src="${raiz}tema/js/topo.js" defer></script>
+$scripts
+</body>
+</html>

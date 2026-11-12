@@ -1,0 +1,44 @@
+/* ---------- páginas ---------- */
+main{flex:1;width:100%;max-width:var(--largura-pagina);margin:0 auto;padding:2rem 1.1rem 3rem;animation:entra .35s ease}
+@keyframes entra{from{opacity:0}to{opacity:1}}
+.box{position:relative;border:2px solid var(--fg);background:var(--bg);padding:1.5rem 1.5rem 1.6rem}
+.home{display:grid;grid-template-columns:1.15fr 1fr;gap:2.2rem;align-items:stretch;margin-top:1rem}
+.sobre h1{font-family:var(--kufi);font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.05;margin:.5rem 0 1rem;font-weight:700}
+.sobre p{font-size:1.12rem;line-height:1.65;max-width:34rem}
+.sobre p+p{margin-top:.9rem}
+.sobre em{font-style:normal;color:var(--verde2)}
+.cats{display:grid;grid-template-rows:1fr 1fr;gap:2.2rem}
+a.cat{text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;gap:.8rem;transition:transform .18s,border-color .18s}
+a.cat:hover{transform:translate(-3px,-3px);border-color:var(--verde2)}
+a.cat h2{font-family:var(--kufi);font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1;font-weight:700}
+a.cat p{color:var(--mut);font-size:1rem;line-height:1.45}
+a.cat .ir{font-family:var(--kufi);font-weight:500;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--verde2)}
+a.cat .ir i{font-style:normal;color:var(--verm2)}
+.page-h{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:2px solid var(--fg);padding-bottom:.6rem;margin-bottom:.4rem}
+.page-h h1{font-family:var(--kufi);font-weight:700;font-size:clamp(2rem,5vw,3.4rem);line-height:1}
+.page-intro{color:var(--mut);max-width:40rem;margin:.9rem 0 1.6rem;font-size:1.05rem}
+.lista a.obra-l{display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:center;text-decoration:none;padding:1.3rem .4rem;border-bottom:1px solid var(--linha);transition:background .15s,padding .15s}
+.lista a.obra-l:hover{background:var(--bg2);padding-left:1rem}
+.obra-l .n{font-family:var(--kufi);font-size:1.6rem;color:var(--verm2)}
+.obra-l h2{font-family:var(--kufi);font-weight:700;font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:1.05}
+.obra-l p{color:var(--mut);margin-top:.35rem;max-width:40rem;font-size:.98rem}
+.tag{display:inline-block;border:1px solid var(--verde);color:var(--verde2);font-family:var(--kufi);font-weight:500;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;margin-right:.4rem;white-space:nowrap}
+.tag.av{border-color:var(--verm);color:var(--verm2)}
+.vazio{padding:2.4rem 0;color:var(--mut);font-style:italic}
+.sobre-pg{max-width:42rem}
+.sobre-pg p{font-size:1.15rem;line-height:1.7;margin-top:1rem}
+.sobre-pg h2{font-family:var(--kufi);font-size:1.4rem;margin:2rem 0 .2rem;color:var(--verde2)}
+.etiquetas{margin-top:.55rem}
+.botao{display:inline-block;font-family:var(--kufi);font-weight:500;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--bg);background:var(--verde2);padding:.6rem 1rem;border:1.5px solid var(--verde2);border-radius:255px 8px 225px 8px/8px 225px 8px 255px;transition:transform .18s}
+.botao:hover{transform:translate(-2px,-2px)}
+.botao.sec{background:none;color:var(--verde2)}
+
+/* ---------- capa da obra: lista de capítulos ---------- */
+.sumario{max-width:none}
+.sumario-topo{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-bottom:2px solid var(--fg);padding-bottom:.8rem}
+.sumario-acoes{display:flex;flex-wrap:wrap;gap:.7rem}
+.sumario ol{list-style:none}
+.sumario li a{display:grid;grid-template-columns:3rem 1fr;gap:.6rem;align-items:baseline;text-decoration:none;padding:.85rem .4rem;border-bottom:1px solid var(--linha);font-size:1.15rem;transition:background .15s,padding .15s}
+.sumario li a:hover{background:var(--bg2);padding-left:1rem}
+.sumario li .n{font-family:var(--kufi);font-size:.95rem;color:var(--verm2)}
+.sumario li small{display:block;color:var(--mut);font-size:.9rem;font-style:italic}

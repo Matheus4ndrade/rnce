@@ -1,0 +1,25 @@
+/* ---------- celular ---------- */
+@media (max-width:900px){
+  .home{grid-template-columns:1fr}
+  .cats{grid-template-rows:none}
+  .cabeca{grid-template-columns:1fr}
+  .cabeca .titulo{grid-row:auto;border-right:0;border-bottom:2px solid var(--fg)}
+  .leitura{grid-template-columns:1fr}
+  .rail{position:fixed;right:1rem;bottom:1rem;top:auto;z-index:65;max-height:none;align-items:flex-end;flex-direction:column-reverse}
+  .rail-b{gap:.7rem}
+  .circ.so-mob{display:grid}
+  .capmenu{position:absolute;right:0;bottom:calc(100% + .7rem);width:min(19rem,calc(100vw - 2rem));max-height:60vh;box-shadow:0 16px 44px rgba(0,0,0,.4)}
+  .texto{padding-bottom:5rem}
+  .texto .cap{scroll-margin-top:9.4rem}
+  nav.menu{gap:1rem}
+}
+@media (max-width:620px){
+  .topo-in{flex-wrap:wrap;gap:.5rem 1rem}
+  .logo{font-size:1.9rem}
+  nav.menu{order:3;width:100%;margin:0;justify-content:space-between;border-top:1px solid var(--linha);padding-top:.4rem}
+  .meta{gap:1.6rem}
+  .lista a.obra-l{grid-template-columns:2rem 1fr}
+  .lista a.obra-l .ir{display:none}
+  .box{padding:1.2rem}
+}
+

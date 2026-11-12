@@ -1,0 +1,8 @@
+/* Fontes locais. */
+@font-face{font-family:"Spectral";font-weight:400;font-style:normal;font-display:swap;src:url(../fontes/spectral-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Spectral";font-weight:400;font-style:italic;font-display:swap;src:url(../fontes/spectral-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Spectral";font-weight:700;font-style:normal;font-display:swap;src:url(../fontes/spectral-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Reem Kufi";font-weight:500;font-style:normal;font-display:swap;src:url(../fontes/reem-kufi-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Reem Kufi";font-weight:700;font-style:normal;font-display:swap;src:url(../fontes/reem-kufi-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Rakkas";font-weight:400;font-style:normal;font-display:swap;src:url(../fontes/rakkas-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Aref Ruqaa";font-weight:400;font-style:normal;font-display:swap;src:url(../fontes/aref-ruqaa-latin-400-normal.woff2) format("woff2")}

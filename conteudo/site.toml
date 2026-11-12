@@ -1,0 +1,29 @@
+[site]
+nome = "RNCE"
+descricao = "RNCE — repositório de projetos narrativos de Matheus de Andrade."
+autor = "Matheus de Andrade"
+instagram = "https://www.instagram.com/matheu.sfelipe/"
+ano = 2026
+# Endereço final; entra no sitemap e na página de erro.
+url = ""
+
+[inicio]
+rotulo = "sobre o projeto"
+titulo = "Um repositório dos meus projetos narrativos."
+# *entre asteriscos* = destaque
+paragrafos = [
+  "Desenvolvi esse projeto com a ideia de ser meu repositório de projetos narrativos. Aqui guardo capítulos de livros, roteiros, contos e o que mais vier na cabeça das histórias que escrevi. A ideia é que, quando os folhetins fecharem, eu junte todos num só: aí deixa de ser *Folhetim* e vai para *Em volume*.",
+  "A proposta desse projeto também é desenvolver um editor de texto, que uso para as minhas histórias. A ideia é que ele tenha uma marcação própria, pensada para narrativa, e outros recursos que um editor comum não tem. Os arquivos desse projeto são *.rnce*.",
+]
+
+[secoes.folhetim]
+nome = "Folhetim"
+rotulo = "episódicos"
+texto = "O que ainda está saindo. Capítulo por capítulo, sem prazo e sem promessa de final."
+vazio = "Nada no folhetim por enquanto."
+
+[secoes.volume]
+nome = "Em volume"
+rotulo = "fechados"
+texto = "O que já terminou. Obras completas, prontas para ler de uma vez."
+vazio = "Nenhuma obra fechada por enquanto."
