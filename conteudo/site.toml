@@ -4,8 +4,7 @@ descricao = "RNCE — repositório de projetos narrativos de Matheus de Andrade.
 autor = "Matheus de Andrade"
 instagram = "https://www.instagram.com/matheu.sfelipe/"
 ano = 2026
-# Endereço final; entra no sitemap e na página de erro.
-url = ""
+url = "https://matheus4ndrade.github.io/rnce"
 
 [inicio]
 rotulo = "sobre o projeto"
